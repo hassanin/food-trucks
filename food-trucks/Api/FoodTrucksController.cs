@@ -17,7 +17,11 @@ namespace food_trucks.Controllers
         private ILogger logger;
         private IFoodTruckContext context;
 
-       [HttpGet("all")]
+      /// <summary>
+      /// Gets All Food trucks in the SF Area
+      /// </summary>
+      /// <returns></returns>
+        [HttpGet("all")]
        public async Task<List<FoodTruck>> AllTrucks()
         {
             logger.LogInformation("Received All food trucks request");
@@ -25,6 +29,12 @@ namespace food_trucks.Controllers
             //return new string[] { "Love","Hop"};
         }
 
+        /// <summary>
+        /// Gets the closest food truck to the desired location
+        /// </summary>
+        /// <param name="location"> current location as geo location</param>
+        /// <param name="maxItems"> max numbers of trucks to return in the response</param>
+        /// <returns></returns>
         [HttpPost("location")]
         public async Task<List<FoodTruck>> GetTrucks(GeoLocation location, int maxItems=5)
         {
@@ -33,7 +43,14 @@ namespace food_trucks.Controllers
             //return context.GetFoodTrucks(null).foodTrucks.Select(elem => elem.ToString()).ToArray();
             //return new string[] { "Love","Hop"};
         }
-
+        /// <summary>
+        /// Searches for a truck using a search term, for example noodles and return the closest to the 
+        /// provided location
+        /// </summary>
+        /// <param name="location"></param>
+        /// <param name="searchTerm"></param>
+        /// <param name="maxItems"></param>
+        /// <returns></returns>
         [HttpPost("search")]
         public async Task<List<FoodTruck>> SearchTrucks(GeoLocation location, string searchTerm, int maxItems = 5)
         {
