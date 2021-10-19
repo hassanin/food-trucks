@@ -5,9 +5,9 @@ This project is a web API that has a dataset of all food trucks in the SF bay ar
 You need visual studio to debug / develop the solution. You open the solution file `food-trucks.sln` and you can run the test project from there.
 
 ## APIs exposed
-/api/food-trucks/all     -> Returns all food trucks
-/api/food-trucks/location {location} {maxItems}   returns the closest food trucks to said location
-/api/food-trucks/search  {location} {searchTerm} {maxITems} returns the closest food truck that match the search Terms. The search here is not exact word match, but semantic search and this step will be expalined in detail below.
+- /api/food-trucks/all     -> Returns all food trucks
+- /api/food-trucks/location {location} {maxItems}   returns the closest food trucks to said location
+- /api/food-trucks/search  {location} {searchTerm} {maxITems} returns the closest food truck that match the search Terms. The search here is not exact word match, but semantic search and this step will be expalined in detail below.
 
 There is also a swagger openAPI that ships with the project that you can try out those different APIs. I did not have time to create a CLI unforunaetly.
 # Project Focus
