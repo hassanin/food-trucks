@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "food-trucks", "food-trucks\food-trucks.csproj", "{AECA8A94-49A5-40FC-B65F-65CE5761B339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-food-trucks", "test-food-trucks\test-food-trucks.csproj", "{9B496413-31C0-4ED2-AAF1-0B9744E4BE2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AECA8A94-49A5-40FC-B65F-65CE5761B339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECA8A94-49A5-40FC-B65F-65CE5761B339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECA8A94-49A5-40FC-B65F-65CE5761B339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECA8A94-49A5-40FC-B65F-65CE5761B339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B496413-31C0-4ED2-AAF1-0B9744E4BE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B496413-31C0-4ED2-AAF1-0B9744E4BE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B496413-31C0-4ED2-AAF1-0B9744E4BE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B496413-31C0-4ED2-AAF1-0B9744E4BE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0172FEC6-ABEC-4D69-B810-9BD51FCF3C5A}
+	EndGlobalSection
+EndGlobal
